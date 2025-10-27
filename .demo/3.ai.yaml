@@ -12,6 +12,8 @@ demos:
   - id: demo-mh9e8d9p-ujp5
     title: Playwright MCP
     steps:
+      - action: setTheme
+        theme: Demo Time Light
       - action: executeVSCodeCommand
         command: workbench.view.extensions
       - action: waitForTimeout
@@ -25,13 +27,30 @@ demos:
       - action: pressArrowUp
       - action: pressEnter
   - id: demo-mh9ejs4h-fuoc
-    title: Demo 3
+    title: Use AI to create tests
     steps:
+      - action: newCopilotChat
       - action: agentCopilotChat
       - action: typeText
         content: |
-          Navigate to https://engagetime.live, click on the "Join a session" link.
+          Navigate to https://engagetime.live with Playwright, click on the "Join a session" link.
           Enter the "yysmtw" session ID in the input form and join the session.
           Use "GitHub Copilot" as the user to enter the session.
-          Create me a Playwright test flow.
+          Create me a Playwright test flow in a new file called "4.ai.spec.ts"
+        insertTypingSpeed: 5
       - action: pressEnter
+  - id: demo-mh9esrcc-ey22
+    title: Other AI tools
+    steps:
+      - action: closeCopilotChat
+      - action: setTheme
+        theme: Demo Time Dark
+      - action: openSlide
+        path: .demo/slides/agents.md
+  - id: demo-mh9f4e5l-kamq
+    title: Open test plan
+    steps:
+      - action: setTheme
+        theme: Demo Time Light
+      - action: open
+        path: ENGAGETIME_TESTPLAN.md

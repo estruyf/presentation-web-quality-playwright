@@ -2,13 +2,5 @@
   "demoTime.defaultFileType": "yaml",
   "[markdown]": {
     "editor.formatOnSave": false
-  },
-  "workbench.colorTheme": "Demo Time Dark",
-  "workbench.statusBar.visible": true,
-  "workbench.editor.showTabs": "multiple",
-  "workbench.activityBar.location": "default",
-  "demoTime.highlightBorderColor": "transparent",
-  "demoTime.highlightBlur": 5,
-  "demoTime.highlightOpacity": 0.7,
-  "demoTime.highlightZoomEnabled": 5
+  }
 }

@@ -1,0 +1,26 @@
+title: The end
+description: ''
+version: 2
+engageTime:
+  sessionId: yysmtw
+demos:
+  - id: demo-mh9f5y2q-jloq
+    title: outro
+    steps:
+      - action: setTheme
+        theme: Demo Time Dark
+      - action: openSlide
+        path: .demo/slides/the-end.md
+  - id: demo-mh9fddvf-hnwr
+    title: Restore settings
+    steps:
+      - action: restoreSettings
+      - action: executeScript
+        command: osascript
+        path: .demo/scripts/show.menubar.scpt
+        id: show-menubar
+      - action: executeScript
+        command: osascript
+        path: .demo/scripts/focus.mode.off.scpt
+        id: focus-mode-off
+      - action: closeEngageTimeSession
