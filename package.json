@@ -1,0 +1,18 @@
+{
+  "name": "web-quality-playwright",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.9.1"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "playwright-m365-helpers": "^0.0.7"
+  }
+}

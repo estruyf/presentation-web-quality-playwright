@@ -1,0 +1,37 @@
+title: AI
+description: ''
+version: 2
+demos:
+  - id: demo-mh9e56e5-ev0b
+    title: Bringing AI to your tests
+    steps:
+      - action: setTheme
+        theme: Demo Time Dark
+      - action: openSlide
+        path: .demo/slides/ai.md
+  - id: demo-mh9e8d9p-ujp5
+    title: Playwright MCP
+    steps:
+      - action: executeVSCodeCommand
+        command: workbench.view.extensions
+      - action: waitForTimeout
+        timeout: 500
+      - action: typeText
+        content: '@mcp playwright'
+      - action: waitForTimeout
+        timeout: 2000
+      - action: pressTab
+      - action: pressTab
+      - action: pressArrowUp
+      - action: pressEnter
+  - id: demo-mh9ejs4h-fuoc
+    title: Demo 3
+    steps:
+      - action: agentCopilotChat
+      - action: typeText
+        content: |
+          Navigate to https://engagetime.live, click on the "Join a session" link.
+          Enter the "yysmtw" session ID in the input form and join the session.
+          Use "GitHub Copilot" as the user to enter the session.
+          Create me a Playwright test flow.
+      - action: pressEnter

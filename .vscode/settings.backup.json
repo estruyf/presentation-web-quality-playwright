@@ -1,0 +1,6 @@
+{
+  "demoTime.defaultFileType": "yaml",
+  "[markdown]": {
+    "editor.formatOnSave": false
+  }
+}

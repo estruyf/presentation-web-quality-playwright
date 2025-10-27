@@ -1,0 +1,96 @@
+title: Enhancing web application quality with Playwright
+version: 2
+demos:
+  - id: demo-mgt4o0us-6pe3
+    title: Prepare
+    steps:
+      - action: backupSettings
+      - action: executeScript
+        command: osascript
+        path: .demo/scripts/hide.menubar.scpt
+        id: hide-menubar
+      - action: startEngageTimeSession
+  - id: demo-mgrrurki-dec1
+    title: Intro
+    steps:
+      - action: setTheme
+        theme: Demo Time Dark (no italic)
+      - action: openSlide
+        path: .demo/slides/intro.md
+  - id: demo-mh97ia4u-xkuf
+    title: Why do we test?
+    steps:
+      - action: openSlide
+        path: .demo/slides/why-do-we-test.md
+  - id: demo-mh97rvcb-fi0p
+    title: E2E Testing
+    steps:
+      - action: openSlide
+        path: .demo/slides/e2e-testing.md
+  - title: Highlight projects
+    description: ''
+    steps:
+      - action: highlight
+        path: /playwright.config.ts
+        position: '24:29'
+      - action: setTheme
+        theme: Demo Time Light (no italic)
+  - title: Before each test
+    description: ''
+    steps:
+      - action: highlight
+        path: /tests/1.start.spec.ts
+        position: '6:11'
+        highlightWholeLine: true
+  - title: Check if page loaded correctly
+    description: ''
+    steps:
+      - action: highlight
+        path: /tests/1.start.spec.ts
+        position: '13:22'
+  - title: Interact with the page
+    description: ''
+    steps:
+      - action: highlight
+        path: /tests/1.start.spec.ts
+        position: '75:99'
+        highlightWholeLine: true
+  - id: demo-mh9alsry-xxkh
+    title: Start test UI
+    steps:
+      - action: unselect
+      - action: openTerminal
+      - action: waitForTimeout
+        timeout: 2000
+      - action: executeTerminalCommand
+        command: npx playwright test --ui
+        insertTypingSpeed: 10
+        insertTypingMode: character-by-character
+  - title: Verify API
+    description: ''
+    steps:
+      - action: highlight
+        path: /tests/2.api.spec.ts
+        position: '8:20'
+        highlightWholeLine: true
+  - title: Mock API Response
+    description: ''
+    steps:
+      - action: highlight
+        path: /tests/2.api.spec.ts
+        position: '30:43'
+        highlightWholeLine: true
+  - title: Mock API Response (continued)
+    description: ''
+    steps:
+      - action: highlight
+        path: /tests/2.api.spec.ts
+        position: '46:63'
+        highlightWholeLine: true
+      - action: pause
+      - action: highlight
+        path: /tests/2.api.spec.ts
+        position: '68:69'
+        highlightWholeLine: true
+engageTime:
+  sessionId: yysmtw

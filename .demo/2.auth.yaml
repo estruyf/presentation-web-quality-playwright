@@ -1,0 +1,62 @@
+title: Authentication
+version: 2
+demos:
+  - id: demo-mh9bqsp8-acgg
+    title: Authentication
+    steps:
+      - action: closeTerminal
+      - action: setTheme
+        theme: Demo Time Dark
+      - action: openSlide
+        path: .demo/slides/auth.md
+  - id: demo-mh9dbbdv-jlzo
+    title: Show login
+    steps:
+      - action: setTheme
+        theme: Demo Time Light (no italic)
+      - action: open
+        path: login.setup.ts
+  - title: Login and store state
+    description: ''
+    steps:
+      - action: highlight
+        path: /login.setup.ts
+        position: '13:21'
+  - id: demo-mh9dfxr1-mucw
+    title: Open config
+    steps:
+      - action: create
+        path: playwright.config.ts
+        contentPath: .demo/snapshots/playwright.config.snapshot.ts
+      - action: open
+        path: playwright.config.ts
+  - title: Implement the login
+    description: ''
+    steps:
+      - action: applyPatch
+        path: /playwright.config.ts
+        contentPath: /.demo/snapshots/playwright.config.snapshot.ts
+        patch: /.demo/patches/login.config.ts.patch
+        insertTypingMode: character-by-character
+        insertTypingSpeed: 10
+      - action: save
+  - id: demo-mh9dl04j-v35e
+    title: Highlight the setup
+    steps:
+      - action: highlight
+        path: playwright.config.ts
+        position: '24:34'
+        highlightWholeLine: true
+  - id: demo-mh9dm11b-929z
+    title: Start test UI
+    steps:
+      - action: unselect
+      - action: openTerminal
+      - action: waitForTimeout
+        timeout: 2000
+      - action: executeTerminalCommand
+        command: npx playwright test --ui
+        insertTypingSpeed: 10
+        insertTypingMode: character-by-character
+engageTime:
+  sessionId: yysmtw
