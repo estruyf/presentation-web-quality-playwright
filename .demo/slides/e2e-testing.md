@@ -213,6 +213,39 @@ test('Create a new session', async ({ request }) => {
 layout: section
 ---
 
+# Always expect the unexpected!
+
+---
+layout: default
+---
+
+# API Mocking
+
+<br />
+<br />
+
+```typescript
+import { test, expect } from '@playwright/test';
+
+test('Create a new session', async ({ request }) => {
+  await page.route('**/sessions', route => {
+    if (route.request().method === 'POST') {
+      route.fulfill({ status: 500, json: { error: 'Internal Server Error' } });
+    } else {
+      route.continue();
+    }
+  });
+
+  await page.goto('/speaker/session/new');
+
+  // Test error handling UI
+});
+```
+
+---
+layout: section
+---
+
 # The lazy way of testing
 
 ---

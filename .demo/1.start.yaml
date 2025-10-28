@@ -146,6 +146,11 @@ demos:
         path: /tests/2.api.spec.ts
         position: '68:69'
         highlightWholeLine: true
+      - action: pause
+      - action: highlight
+        path: /tests/2.api.spec.ts
+        position: '72:84'
+        highlightWholeLine: true
   - id: demo-mhaorfnp-hkwp
     title: Demo API
     steps:

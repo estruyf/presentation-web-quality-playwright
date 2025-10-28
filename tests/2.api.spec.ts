@@ -68,4 +68,18 @@ test.describe("EngageTime Session - API Testing", () => {
     const questions = page.getByTestId(`question-item`);
     await expect(questions).toHaveCount(1);
   });
+
+  test("Verify the session load error state", async ({ page }) => {
+    await page.route("**/sessions/**", (route) =>
+      route.fulfill({
+        status: 404,
+        body: JSON.stringify({ error: "Not Found" }),
+      })
+    );
+
+    await page.goto(SESSION_URL);
+
+    const errorMessage = page.getByText("Session not found");
+    await expect(errorMessage).toBeVisible();
+  });
 });
