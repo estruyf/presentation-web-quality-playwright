@@ -27,6 +27,11 @@ demos:
     steps:
       - action: setTheme
         theme: Demo Time Dark (no italic)
+      - action: executeVSCodeCommand
+        command: workbench.action.hideEditorTabs
+      - action: executeVSCodeCommand
+        command: workbench.action.closeSidebar
+      - action: closeAll
       - action: openSlide
         path: .demo/slides/intro.md
     icons:

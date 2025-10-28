@@ -5,7 +5,7 @@ title: Enhancing web application quality with Playwright
 author: Elio Struyf
 ---
 
-<img src=".demo/assets/session-yysmtw-qr.png" alt="Playwright Logo" style="height: 200px;" />
+<img src=".demo/assets/session-yysmtw-qr.png" alt="Playwright Logo" style="height: 210px; margin-bottom: 32px;" />
 
 ---
 customLayout: .demo/templates/about-me.hbs
