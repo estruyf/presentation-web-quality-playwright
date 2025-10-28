@@ -1,6 +1,14 @@
 title: Authentication
 version: 2
 demos:
+  - id: demo-mhahftpu-jjzd
+    title: Poll
+    steps:
+      - action: showEngageTimePoll
+        pollId: beln4g
+    icons:
+      start: pie-chart
+      end: ''
   - id: demo-mh9bqsp8-acgg
     title: Authentication
     steps:
@@ -9,6 +17,9 @@ demos:
         theme: Demo Time Dark
       - action: openSlide
         path: .demo/slides/auth.md
+    icons:
+      start: device-desktop
+      end: ''
   - id: demo-mh9dbbdv-jlzo
     title: Show login
     steps:

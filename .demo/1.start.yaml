@@ -29,16 +29,41 @@ demos:
         theme: Demo Time Dark (no italic)
       - action: openSlide
         path: .demo/slides/intro.md
+    icons:
+      start: device-desktop
+      end: ''
   - id: demo-mh97ia4u-xkuf
     title: Why do we test?
     steps:
       - action: openSlide
         path: .demo/slides/why-do-we-test.md
+    icons:
+      start: device-desktop
+      end: ''
+  - id: demo-mhah5e09-lq0e
+    title: Poll
+    steps:
+      - action: showEngageTimePoll
+        pollId: b5v9d1
+    icons:
+      start: pie-chart
+      end: ''
   - id: demo-mh97rvcb-fi0p
     title: E2E Testing
     steps:
       - action: openSlide
         path: .demo/slides/e2e-testing.md
+    icons:
+      start: device-desktop
+      end: ''
+  - id: demo-mhahdb4s-73cx
+    title: Poll
+    steps:
+      - action: showEngageTimePoll
+        pollId: 4my1yy
+    icons:
+      start: pie-chart
+      end: ''
   - title: Highlight projects
     description: ''
     steps:
@@ -78,6 +103,14 @@ demos:
         command: npx playwright test --ui
         insertTypingSpeed: 10
         insertTypingMode: character-by-character
+  - id: demo-mhaheyjo-bs2n
+    title: Poll
+    steps:
+      - action: showEngageTimePoll
+        pollId: 4my1yy
+    icons:
+      start: pie-chart
+      end: ''
   - title: Verify API
     description: ''
     steps:

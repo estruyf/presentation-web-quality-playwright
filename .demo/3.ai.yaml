@@ -9,6 +9,9 @@ demos:
         theme: Demo Time Dark
       - action: openSlide
         path: .demo/slides/ai.md
+    icons:
+      start: device-desktop
+      end: ''
   - id: demo-mh9e8d9p-ujp5
     title: Playwright MCP
     steps:
@@ -47,6 +50,9 @@ demos:
         theme: Demo Time Dark
       - action: openSlide
         path: .demo/slides/agents.md
+    icons:
+      start: device-desktop
+      end: ''
   - id: demo-mh9f4e5l-kamq
     title: Open test plan
     steps:

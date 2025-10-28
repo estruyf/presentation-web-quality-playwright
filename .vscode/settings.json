@@ -2,5 +2,6 @@
   "demoTime.defaultFileType": "yaml",
   "[markdown]": {
     "editor.formatOnSave": false
-  }
+  },
+  "workbench.colorTheme": "Demo Time Dark (no italic)"
 }

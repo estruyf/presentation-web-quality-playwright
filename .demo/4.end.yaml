@@ -11,6 +11,9 @@ demos:
         theme: Demo Time Dark
       - action: openSlide
         path: .demo/slides/the-end.md
+    icons:
+      start: device-desktop
+      end: ''
   - id: demo-mh9fddvf-hnwr
     title: Restore settings
     steps:
