@@ -13,6 +13,14 @@ demos:
         command: osascript
         path: .demo/scripts/focus.mode.on.scpt
         id: focus-mode-on
+      - action: setSetting
+        setting:
+          key: editor.fontSize
+          value: 20
+      - action: setSetting
+        setting:
+          key: terminal.integrated.fontSize
+          value: 20
       - action: startEngageTimeSession
   - id: demo-mgrrurki-dec1
     title: Intro
