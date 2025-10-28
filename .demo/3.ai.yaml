@@ -5,6 +5,9 @@ demos:
   - id: demo-mh9e56e5-ev0b
     title: Bringing AI to your tests
     steps:
+      - action: executeVSCodeCommand
+        command: workbench.action.terminal.killAll
+      - action: closeTerminal
       - action: setTheme
         theme: Demo Time Dark
       - action: openSlide
@@ -45,6 +48,8 @@ demos:
   - id: demo-mh9esrcc-ey22
     title: Other AI tools
     steps:
+      - action: executeVSCodeCommand
+        command: workbench.action.closeSidebar
       - action: closeCopilotChat
       - action: setTheme
         theme: Demo Time Dark

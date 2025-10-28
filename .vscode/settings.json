@@ -3,9 +3,9 @@
   "[markdown]": {
     "editor.formatOnSave": false
   },
-  "workbench.colorTheme": "Demo Time Light (no italic)",
+  "workbench.colorTheme": "Demo Time Dark",
   "workbench.statusBar.visible": true,
-  "workbench.editor.showTabs": "none",
+  "workbench.editor.showTabs": "multiple",
   "workbench.activityBar.location": "default",
   "demoTime.highlightBorderColor": "transparent",
   "demoTime.highlightBlur": 5,

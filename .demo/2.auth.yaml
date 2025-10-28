@@ -12,6 +12,8 @@ demos:
   - id: demo-mh9bqsp8-acgg
     title: Authentication
     steps:
+      - action: executeVSCodeCommand
+        command: workbench.action.terminal.killAll
       - action: closeTerminal
       - action: setTheme
         theme: Demo Time Dark
@@ -26,12 +28,12 @@ demos:
       - action: setTheme
         theme: Demo Time Light (no italic)
       - action: open
-        path: login.setup.ts
+        path: tests/login.setup.ts
   - title: Login and store state
     description: ''
     steps:
       - action: highlight
-        path: /login.setup.ts
+        path: tests/login.setup.ts
         position: '13:21'
   - id: demo-mh9dfxr1-mucw
     title: Open config
@@ -57,6 +59,13 @@ demos:
       - action: highlight
         path: playwright.config.ts
         position: '24:34'
+        highlightWholeLine: true
+  - id: demo-mhap79nm-yufw
+    title: Show the test
+    steps:
+      - action: highlight
+        path: tests/3.auth.spec.ts
+        position: '4:10'
         highlightWholeLine: true
   - id: demo-mh9dm11b-929z
     title: Start test UI
