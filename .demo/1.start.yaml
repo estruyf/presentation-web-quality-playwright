@@ -111,6 +111,10 @@ demos:
   - id: demo-mhaheyjo-bs2n
     title: Poll
     steps:
+      - action: executeVSCodeCommand
+        command: workbench.action.terminal.toggleTerminal
+      - action: executeVSCodeCommand
+        command: workbench.action.terminal.toggleTerminal
       - action: showEngageTimePoll
         pollId: 4my1yy
     icons:
@@ -142,5 +146,12 @@ demos:
         path: /tests/2.api.spec.ts
         position: '68:69'
         highlightWholeLine: true
+  - id: demo-mhaorfnp-hkwp
+    title: Demo API
+    steps:
+      - action: executeScript
+        id: open-chromium
+        command: osascript -e 'tell application "Chromium" to activate'
+        path: .demo/scripts/open.chromium.scpt
 engageTime:
   sessionId: yysmtw

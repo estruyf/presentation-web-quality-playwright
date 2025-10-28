@@ -1,0 +1,1 @@
+tell application "Chromium" to activate
