@@ -80,7 +80,7 @@ flowchart LR
   a[Authentication]
   c[MFA]
   d[Using **Time-based One-Time Password**]
-  e[Using an **auth state**]
+  e[Using a **pre-auth session state**]
   f[Start testing]
 
   a --> c
@@ -92,13 +92,13 @@ flowchart LR
 
 <br />
 
-> Reference: [Using an authenticated session](https://www.eliostruyf.com/e2e-testing-mfa-environment-playwright-auth-session/)
+> Reference: [Using an authenticated session state](https://www.eliostruyf.com/e2e-testing-mfa-environment-playwright-auth-session/)
 
 ---
 layout: default
 ---
 
-# What is an auth state?
+# What is an auth session state?
 
 A file which contains:
 
@@ -107,6 +107,10 @@ A file which contains:
 - Session Storage
 
 This file can be loaded into a browser context to simulate an authenticated session.
+
+```bash
+npx playwright codegen engagetime.live --save-storage=auth.json
+```
 
 ---
 layout: section

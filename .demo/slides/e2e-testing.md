@@ -27,39 +27,41 @@ End-to-End (E2E) testing simulates real user interactions with your application:
 layout: default
 ---
 
+# Why E2E Testing?
+
+- **User-Centric**: Tests reflect real user scenarios
+- **Comprehensive Coverage**: Validates full application stack
+- **Regression Prevention**: Catches bugs before they reach production
+- **Cross-Browser Assurance**: Ensures consistent behavior across browsers
+- **Faster Feedback**: Automated tests run quickly and frequently
+
+---
+layout: default
+---
+
+# What is Playwright?
+
+[Playwright](https://playwright.dev/) is a powerful open-source framework for E2E testing of web applications.
+
+- Developed by Microsoft
+- Supports **Chromium**, **Firefox**, and **WebKit**
+- Provides a **unified API** for cross-browser testing
+- Rich features for **reliable** and **fast** tests
+
+---
+layout: default
+---
+
 # Why Playwright?
 
-<div class="features-grid">
+- **Cross-Browser Testing**: Single API for multiple browsers
+- **Auto-Waiting**: Built-in waits for elements and actions
+- **Powerful Selectors**: Semantic and flexible element selection
+- **Headless & Headed Modes**: Run tests in both modes
+- **Rich Reporting**: Detailed test reports and screenshots
+- **Easy Setup**: Quick to get started with minimal configuration
+- **Multi-Language Support**: JavaScript, TypeScript, Python, C#, and Java
 
-**Cross-Browser** 🌐
-- Chromium, Firefox, WebKit
-- Single unified API
-
-**Reliable** 🎯
-- Auto-wait mechanisms
-- Web-first assertions
-- Network isolation
-
-**Fast** ⚡
-- Parallel execution
-- Lightweight
-- No flakiness
-
-**Developer Friendly** 👨‍💻
-- Record & Playback
-- UI Mode debugging
-- Trace viewer
-
-</div>
-
-<style>
-.features-grid {
-  display: grid;
-  grid-template-columns: .5fr 1fr;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-</style>
 
 ---
 layout: image-right
