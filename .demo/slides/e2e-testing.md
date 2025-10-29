@@ -282,24 +282,6 @@ test("Check layout shift", async ({ page, browserName }) => {
   }
 </style>
 
-
----
-layout: default
----
-
-# Running Tests
-
-```bash
-# Run all tests
-npx playwright test
-
-# Run specific file
-npx playwright test tests/engagetime.spec.ts
-
-# Run with UI Mode
-npx playwright test --ui
-```
-
 ---
 layout: default
 ---
@@ -321,4 +303,22 @@ export default defineConfig({
   retries: 2,
   timeout: 30000,
 });
+```
+
+
+---
+layout: default
+---
+
+# Running Tests
+
+```bash
+# Run all tests
+npx playwright test
+
+# Run specific file
+npx playwright test tests/engagetime.spec.ts
+
+# Run with UI Mode
+npx playwright test --ui
 ```
