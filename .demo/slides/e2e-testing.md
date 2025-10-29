@@ -34,6 +34,7 @@ layout: default
 - **Regression Prevention**: Catches bugs before they reach production
 - **Cross-Browser Assurance**: Ensures consistent behavior across browsers
 - **Faster Feedback**: Automated tests run quickly and frequently
+- **Key when building on top of 3rd party services**
 
 ---
 layout: default
@@ -47,6 +48,13 @@ layout: default
 - Supports **Chromium**, **Firefox**, and **WebKit**
 - Provides a **unified API** for cross-browser testing
 - Rich features for **reliable** and **fast** tests
+
+
+**Advantages over Selenium:**
+- **No WebDriver management** - Playwright handles browser binaries
+- **Better reliability** - Auto-retry and smart waiting mechanisms
+- **Modern architecture** - Direct browser communication vs WebDriver protocol
+
 
 ---
 layout: default
@@ -146,9 +154,9 @@ layout: default
 
 ```typescript
 await test.step('Login', async () => {
-  await page.fill('[name="email"]', 'user@example.com');
-  await page.fill('[name="password"]', 'password123');
-  await page.click('button:has-text("Sign in")');
+  await page.getByRole('input', { name: 'username' }).fill('elio');
+  await page.getByLabel('Password').fill('secret');
+  await page.getByTestId('btn-login').click();
 });
 ```
 
@@ -279,7 +287,7 @@ test("Check layout shift", async ({ page, browserName }) => {
 layout: default
 ---
 
-## Running Tests
+# Running Tests
 
 ```bash
 # Run all tests
@@ -296,7 +304,7 @@ npx playwright test --ui
 layout: default
 ---
 
-## Configuration & Parallel Execution
+# Configuration & Parallel Execution
 
 - **Parallel by default** - Multiple tests run simultaneously
 - **Serial when needed** - Use `test.describe.configure({ mode: 'serial' })`

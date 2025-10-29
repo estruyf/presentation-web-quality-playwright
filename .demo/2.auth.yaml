@@ -78,5 +78,15 @@ demos:
         command: npx playwright test --ui
         insertTypingSpeed: 10
         insertTypingMode: character-by-character
+  - id: demo-mh9e3v6l-kywo
+    title: Multiple users
+    steps:
+      - action: executeVSCodeCommand
+        command: workbench.action.terminal.killAll
+      - action: closeTerminal
+      - action: setTheme
+        theme: Demo Time Dark
+      - action: openSlide
+        path: .demo/slides/multi-users.md
 engageTime:
   sessionId: yysmtw
