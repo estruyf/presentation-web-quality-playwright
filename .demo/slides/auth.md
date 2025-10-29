@@ -79,8 +79,8 @@ layout: section
 flowchart LR
   a[Authentication]
   c[MFA]
-  d[Using **Time-based One-Time Password**]
-  e[Using a **pre-auth session state**]
+  d[**Time-based One-Time Password**]
+  e[**pre-auth session state**]
   f[Start testing]
 
   a --> c

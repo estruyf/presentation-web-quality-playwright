@@ -97,7 +97,22 @@ demos:
     steps:
       - action: highlight
         path: /tests/1.start.spec.ts
-        position: '75:99'
+        position: '75:79'
+        highlightWholeLine: true
+      - action: pause
+      - action: highlight
+        path: /tests/1.start.spec.ts
+        position: '81:85'
+        highlightWholeLine: true
+      - action: pause
+      - action: highlight
+        path: /tests/1.start.spec.ts
+        position: '87:90'
+        highlightWholeLine: true
+      - action: pause
+      - action: highlight
+        path: /tests/1.start.spec.ts
+        position: '92:98'
         highlightWholeLine: true
   - id: demo-mh9alsry-xxkh
     title: Start test UI
@@ -127,7 +142,7 @@ demos:
     steps:
       - action: highlight
         path: /tests/2.api.spec.ts
-        position: '8:20'
+        position: '16:28'
         highlightWholeLine: true
   - title: Mock API Response
     description: ''

@@ -46,8 +46,7 @@ test.describe("EngageTime Session - E2E Testing Basics", () => {
     await test.step("Verify session description", async () => {
       const description = page.locator("main >> p");
       const descriptionText = await description.first().textContent();
-      expect(descriptionText).toContain("Playwright");
-      expect(descriptionText).toContain("end-to-end testing");
+      expect(descriptionText).toContain("Session at Techorama NL");
     });
   });
 
