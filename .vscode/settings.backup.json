@@ -10,5 +10,6 @@
   "demoTime.highlightBorderColor": "transparent",
   "demoTime.highlightBlur": 5,
   "demoTime.highlightOpacity": 0.7,
-  "demoTime.highlightZoomEnabled": 5
+  "demoTime.highlightZoomEnabled": 5,
+  "demoTime.api.enabled": true
 }
