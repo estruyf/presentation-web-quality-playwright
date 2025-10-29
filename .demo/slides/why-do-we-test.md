@@ -1,7 +1,7 @@
 ---
 theme: monomi
 layout: image
-image: .demo/assets/money.avif
+image: .demo/assets/error.avif
 ---
 
 <style>
@@ -13,6 +13,17 @@ image: .demo/assets/money.avif
 ---
 layout: image
 image: .demo/assets/oh-no.jpg
+---
+
+<style>
+  .slide__layout.image {
+    filter: grayscale(100%);
+  }
+</style>
+
+---
+layout: image
+image: .demo/assets/money.avif
 ---
 
 <style>
