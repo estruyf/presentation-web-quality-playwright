@@ -42,7 +42,7 @@ layout: default
 
 # What is Playwright?
 
-[Playwright](https://playwright.dev/) is a powerful open-source framework for E2E testing of web applications.
+[Playwright](https://playwright.dev/) is a open-source framework for E2E testing of web applications.
 
 - Developed by Microsoft
 - Supports **Chromium**, **Firefox**, and **WebKit**
