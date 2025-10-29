@@ -50,12 +50,6 @@ layout: default
 - Rich features for **reliable** and **fast** tests
 
 
-**Advantages over Selenium:**
-- **No WebDriver management** - Playwright handles browser binaries
-- **Better reliability** - Auto-retry and smart waiting mechanisms
-- **Modern architecture** - Direct browser communication vs WebDriver protocol
-
-
 ---
 layout: default
 ---
@@ -69,6 +63,12 @@ layout: default
 - **Rich Reporting**: Detailed test reports and screenshots
 - **Easy Setup**: Quick to get started with minimal configuration
 - **Multi-Language Support**: JavaScript, TypeScript, Python, C#, and Java
+
+
+**Advantages over Selenium:**
+- **No WebDriver management** - Playwright handles browser binaries
+- **Better reliability** - Auto-retry and smart waiting mechanisms
+- **Modern architecture** - Direct browser communication vs WebDriver protocol
 
 
 ---
