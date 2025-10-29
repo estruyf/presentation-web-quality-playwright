@@ -31,6 +31,8 @@ demos:
         command: workbench.action.hideEditorTabs
       - action: executeVSCodeCommand
         command: workbench.action.closeSidebar
+      - action: executeVSCodeCommand
+        command: workbench.action.activityBarLocation.hide
       - action: closeAll
       - action: openSlide
         path: .demo/slides/intro.md
